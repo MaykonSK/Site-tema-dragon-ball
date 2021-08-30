@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body class="fundo-primario">
+	<header>
+		<div id="logo">
+			<img src="imagens/banner.jpg">
+		</div>
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="active">Home</a>
+				<a href="videos.html">Videos</a>
+				<a href="sobre.html">Sobre</a>
+				<a href="#contato">Contato</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    <i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<div id="conteudo-principal">
+				<section>
+					<div class="imagem">
+						<img src="imagens/logo-db.png">
+						<div class="video">
+							<iframe width="100%" height="315" style="border-radius: 10px;" src="https://www.youtube.com/embed/uyb1uaLhzr0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="esquerdo">
+				<aside>
+					<section>
+						<div class="imagem">
+							<img src="imagens/trunks2.png">
+						</div>
+					</section>
+				</aside>
+			</div>
+			<div class="direito">
+				<aside>
+					<section>
+						<div class="imagem">
+							<img src="imagens/trunks.png">
+						</div>
+					</section>
+				</aside>
+			</div>
+		</div>
+		<div class="container">
+			<section>
+				<fieldset>
+				<h2>Quem matou o Zamasu ?</h2>
+				<form>
+					<input type="radio" name="nome" value="false" id="goku">
+					<label for="goku">Goku</label><br>
+					<input type="radio" name="nome" value="false" id="vegeta">
+					<label for="vegeta">Vegeta</label><br>
+					<input type="radio" name="nome" value="false" id="gohan">
+					<label for="gohan">Gohan</label><br>
+					<input type="radio" name="nome" value="true" id="trunks">
+					<label for="trunks">Trunks</label><br>
+					<input type="radio" name="nome" value="false" id="freeza">
+					<label for="freeza">Freeza</label><br>
+					<div class="centralizar">
+						<button type="button" onclick="enviar()">Enviar</button>
+					</div>
+				</form>
+				</fieldset>
+			</section>
+		</div>
+		<div id="rodape">
+			<footer>
+				by Maykon 2020
+				<br/>
+				<br/>
+				<p>Site desenvolvido sem frameworks</p>
+			</footer>
+		</div>
+	</main>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	font-family: 'Arial';
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#logo img{
+	width: 100%;
+}
+main {
+	margin-top: 10px;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#rodape {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#conteudo-principal {
+	width:  40%;
+	order: 2;
+}
+.esquerdo {
+	width: 25%;
+	order: 1;
+}
+.direito {
+	width: 25%;
+	order: 3;
+}
+footer {
+	width: 100%;
+	text-align: center;
+	background-color: #333;
+	color: white;
+	padding: 10px;
+	position: relative;
+	bottom: 0px;
+}
+.imagem img {
+	width: 100%;
+}
+header {
+	background-color: #333;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  /*float: left;*/
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#conteudo-principal {
+		width: 100%
+	}
+	.esquerdo {
+		width: 100%;
+		order: 1;
+		display: none;
+	}
+	.direito {
+		width: 100%;
+		order: 3;
+		display: none;
+	}
+	.topnav a:not(:first-child) {display: none;}
+  	.topnav a.icon {
+    float: right;
+    display: block;
+  	}
+
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav {
+  	text-align: left;
+  }
+
+}
+h2 {
+	margin-bottom: 5px;
+	letter-spacing: 1px;
+	background-color: blue;
+	color: white;
+	padding: 0px 5px;
+	text-align: center;
+}
+button {
+	padding: 5px;
+	font-size: 1.2em;
+	font-family: 'Arial';
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: blue;
+	color: white;
+}
+fieldset {
+	padding: 5px;
+	border: 1px solid blue;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background-image: url(../imagens/fundo3.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.centralizar {
+	text-align: center;
+}
+button:hover {
+	color: black;
+	background-color: white;
+}
+label {
+	color: white;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding-bottom: 10px;
+}
+li a.icon {
+	display: none;
+}
+
+/*videos*/
+.container2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.sessao {
+	width: 30%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid white;
+	padding: 5px;
+}
+.sessao h2 {
+	border-radius: 5px;
+	
+}
+form {
+	text-align: left;
+	padding: 10px;
+}
+h4 {
+	color: yellow;
+	padding: 5px;
+}
+p {
+	color: white;
+  	width: 100%;  
+  	display: block;   
+}
+@media screen and (max-width: 600px) {
+	.container2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.sessao {
+		width: 100%;
+		padding: 0px;
+		margin: 0px;
+
+	}	
+	header {
+		width: 100%;
+	}
+}	
+
+/*sobre*/
+.container3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.sessao3 {
+	width: 30%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+.fundo-secundario {
+	background-color: black;
+}
+.fundo-primario {
+	background-image: url(../imagens/fundo2.gif);
+}
+@media screen and (max-width: 600px) {
+	.container3 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.sessao3 {
+		width: 100%;
+		padding: 0px;
+		margin: 0px;
+
+	}	
+	p {
+		width: 100%;
+		display: block;
+	}
+}
